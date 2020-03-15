@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\user\Desktop\Mario(ÁøÂ¥)\.metadata\.plugins\org.eclipse.jdt.core
+789344348.index
+3702785518.index
