@@ -21,16 +21,10 @@
         <link rel="shortcut icon" href="/Content/itemimg/Mario-Red-Mushroom.ico"/>
 
         <script type="text/javascript">
-            if (document.addEventListener) {
-                document.addEventListener('contextmenu', function (e) {
-                    e.preventDefault();
-                }, false);
-            } else {
-                document.attachEvent('oncontextmenu', function () {
-                    window.event.returnValue = false;
-                });
-            }
-    </script>
+            document.oncontextmenu = function() {
+             return false;
+            }  
+        </script>
 </head>
 
 
