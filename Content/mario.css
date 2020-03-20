@@ -1036,13 +1036,13 @@ span.stars span {
 
 #bottompanel {
     position: absolute;
-    top: 615px;
-    left: 0;
+    top: 95%;
+    /* left: 0; */
     width: 100%;
-    top: auto;
-    bottom: 0;
-    z-index: 10;
-    opacity: .8;
+    /* top: auto; */
+    /* bottom: 0; */
+    /* z-index: 10; */
+    /* opacity: .8; */
 }
 
 #bottomnav {
