@@ -168,29 +168,29 @@
             },
             bind: function() {
                 var n = this;
-                $("#lButton").on("mousedown", function() {
+                $("#lButton").on("touchstart", function() {
                     n.left = !0
-                }).on("mouseup", function() {
+                }).on("touchend", function() {
                     n.left = !1
                 });
-                $("#rButton").on("mousedown", function() {
+                $("#rButton").on("touchstart", function() {
                     n.right = !0
-                }).on("mouseup", function() {
+                }).on("touchend", function() {
                     n.right = !1
                 });
-                $("#dButton").on("mousedown", function() {
+                $("#dButton").on("touchstart", function() {
                     n.down = !0
-                }).on("mouseup", function() {
+                }).on("touchend", function() {
                     n.down = !1
                 });
-                $("#uButton").on("mousedown", function() {
+                $("#uButton").on("touchstart", function() {
                     n.up = !0
-                }).on("mouseup", function() {
+                }).on("touchend", function() {
                     n.up = !1
                 });
-                $("#aButton").on("mousedown", function() {
+                $("#aButton").on("touchstart", function() {
                     n.accelerate = !0
-                }).on("mouseup", function() {
+                }).on("touchend", function() {
                     n.accelerate = !1
                 })
             },
