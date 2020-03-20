@@ -1038,13 +1038,17 @@ span.stars span {
     position: absolute;
     top: 615px;
     left: 0;
-    width: 100%
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    z-index: 10;
+    opacity: .8;
 }
 
 #bottomnav {
     margin: auto;
-    width: 300px;
-    height: 60px
+    width: 450px;
+    height: 70px
 }
 
 .bottommenu {
@@ -1579,11 +1583,66 @@ a.openid_large_btn:focus {
         position: relative;
         z-index: 10
     }
+    .gbtn1 {
+        background-color: white; 
+        color: black; 
+        border: 5px solid #FE9A2E;
+        border-radius: 12px;
+        font-size: 20px;
+        padding: 13px 15px;
+        margin: 10px;
+      }
+      
+      .gbtn1:hover {
+        background-color: #FE9A2E;
+        color: white;
+      }
+      
+     .gbtn2 {
+        background-color: white; 
+        color: black; 
+        border: 5px solid #FE9A2E;
+        border-radius: 12px;
+        font-size: 20px;
+        padding: 13px 20px;
+        margin-left: 50px;
+      }
+      
+      .gbtn2:hover {
+        background-color: #FE9A2E;
+        color: white;
+      }
 
-    #bottompanel {
-        top: auto;
-        bottom: 0;
-        z-index: 10;
-        opacity: .8
-    }
+
+      .gbtn3 {
+        background-color: white;
+        color: black;
+        border: 5px solid #f44336;
+        border-radius: 50%;
+        padding: 10px 20px;
+        font-size: 24px;
+        margin: 10px;
+      }
+      
+      .gbtn3:hover {
+        background-color: #f44336;
+        color: white;
+      }
+      
+      .gbtn4 {
+        background-color: white;
+        color: black;
+        border: 5px solid #008CBA;
+        border-radius: 50%;
+        padding: 10px 20px;
+        font-size: 24px;
+        margin: 5px;
+      }
+      
+      .gbtn4:hover {
+        background-color: #008CBA;
+        color: white;
+      }
+
+    
 }
