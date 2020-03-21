@@ -25,6 +25,11 @@
              return false;
             }  
         </script>
+
+        <script>
+            document.getElementById('yourElement').oncontextmenu = function(event) { event.preventDefault(); event.stopPropagation(); event.stopImmediatePropagation(); return false; };
+        </script>
+        
 </head>
 
 
