@@ -20,16 +20,32 @@
         
         <link rel="shortcut icon" href="/Content/itemimg/Mario-Red-Mushroom.ico"/>
 
-        <script type="text/javascript">
-            document.oncontextmenu = function() {
-             return false;
-            }  
-        </script>
-
         <script>
             document.getElementById('yourElement').oncontextmenu = function(event) { event.preventDefault(); event.stopPropagation(); event.stopImmediatePropagation(); return false; };
         </script>
         
+        <script>
+            var Contextmenu = !function(){
+            var id = 'contextmenu';
+            {
+            var div = document.createElement('div');
+            div.id = id;
+            div.style = 'display:none;position:fixed;width:150px; height:200px; background: #fff;box-shadow:1px 1px 5px 0 rgba(0, 0, 0, 0.54)';
+            document.body.appendChild(div);
+            }
+            var div = document.getElementById(id);
+            document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+
+            var x = e.pageX + 'px';
+            var y = e.pageY + 'px';
+            div.style.display = 'block';
+            div.style.left = x;
+            div.style.top = y;
+            })
+            document.addEventListener("click", function(e) {div.style.display = 'none'})
+            }()
+        </script>
 </head>
 
 
