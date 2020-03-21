@@ -9,49 +9,19 @@
         <!-- 부트스크랩 사용-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <meta name="keywords" content="Florian Rappl, Mario5, Regensburg, Super, Mario, HTML5, JavaScript, MVC, Level, Leveleditor, Editor, Mario, Bros" />
         <meta name="description" content="Play, edit, save and rate levels in the Mario universe directly in your browser." />
         <meta name="author" content="Martin Buchner, Patrick Saar, Florian Rappl" />
         <meta name="viewport" content="width=640, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 
-        <!-- <link href="/Content/mario.css?v=cWIlPmFqmmap4kVwU3SODVuEA3I_tuJPgJZsK9q4Gzs1" rel="stylesheet" /> -->
         <link href="./Content/mario.css" rel="stylesheet" />
-        
         <link rel="shortcut icon" href="/Content/itemimg/Mario-Red-Mushroom.ico"/>
-
-        <script>
-            document.getElementById('yourElement').oncontextmenu = function(event) { event.preventDefault(); event.stopPropagation(); event.stopImmediatePropagation(); return false; };
-        </script>
-        
-        <script>
-            var Contextmenu = !function(){
-            var id = 'contextmenu';
-            {
-            var div = document.createElement('div');
-            div.id = id;
-            div.style = 'display:none;position:fixed;width:150px; height:200px; background: #fff;box-shadow:1px 1px 5px 0 rgba(0, 0, 0, 0.54)';
-            document.body.appendChild(div);
-            }
-            var div = document.getElementById(id);
-            document.addEventListener("contextmenu", function(e) {
-            e.preventDefault();
-
-            var x = e.pageX + 'px';
-            var y = e.pageY + 'px';
-            div.style.display = 'block';
-            div.style.left = x;
-            div.style.top = y;
-            })
-            document.addEventListener("click", function(e) {div.style.display = 'none'})
-            }()
-        </script>
 </head>
-
 
 <body class="container">
     	<!-- Game Musik -->
-		
 		<audio id="GameMusic" preload="auto" loop>
 			<source src="./audio/music.ogg" type="audio/ogg" />
             <source src="./audio/music.mp3" type="audio/mp3" />
@@ -243,11 +213,11 @@
                 <br><Br><br>
             </div>
             <div id="game_buttons">
-                <button id="lButton" class="gamebutton gbtn1">&larr;</button>
-                <button id="rButton" class="gamebutton gbtn1">&rarr;</button>
-                <button id="aButton" class="gamebutton gbtn3">A</button>
-                <button id="uButton" class="gamebutton gbtn4">B</button><br>
-                <button id="dButton" class="gamebutton gbtn2">&darr;</button>
+                <button id="lButton" class="w3-button w3-orange w3-xlarge">&larr;</button>
+                <button id="rButton" class="w3-button w3-orange w3-xlarge">&rarr;</button>
+                <button id="aButton" class="w3-button w3-red w3-circle w3-xlarge">A</button>
+                <button id="uButton" class="w3-button w3-blue w3-circle w3-xlarge">B</button><br>
+                <button id="dButton" class="w3-button w3-orange w3-xlarge">&darr;</button>
             </div>
         </nav>
     </div>
@@ -261,9 +231,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js" type="text/javascript"></script>
     <script src="http://cdn.shareaholic.com/media/js/jquery.shareaholic-publishers-sb.min.js" type="text/javascript"></script>
 
-    <!-- <script src="/Scripts/webapp.js?v=cM7WgaMZO-sjsCJinvAr781z6LYcOhUQiHjrT5uYT_01"></script> -->
     <script src="./Scripts/webapp.js" type="text/javascript" ></script>
-    <!-- <script src="/Scripts/mario.js?v=g8KLnHB3duifRq0oNtWo5Ku6V9Lo-pV0pyhQZ9DOMjc1"></script> -->
     <script src="./Scripts/mario.js" type="text/javascript" ></script>
     
     <script src="./Scripts/openid-jquery.js" type="text/javascript"></script>
