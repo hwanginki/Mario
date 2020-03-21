@@ -12,7 +12,7 @@
     top: 50%;
     margin-left: -321px;
     margin-top: -241px;
-    border: 1px solid #ccc;
+    border: 5px solid rgb(250, 236, 115);
     overflow: hidden
 }
 
@@ -225,7 +225,7 @@
     color: #666
 }
 
-.game-buttons {
+.game_buttons {
     height: 50px
 }
 
@@ -620,6 +620,10 @@ body.no-overflow {
     position: absolute
 }
 
+#sections {
+    top: 50%;
+    margin-top: -180px
+}
 .section {
     height: 100%;
     width: 100%;
@@ -1034,21 +1038,23 @@ span.stars span {
     left: 25px
 }
 
+/* botton */
 #bottompanel {
     position: absolute;
     top: 100%;
-    left: 35%;
-    width: 50%;
+    left: 25%;
+    width: 300px;
     /* top: auto; */
-    bottom: 0;
+    /* bottom: 0; */
     z-index: 10;
     /* opacity: .8; */
+    margin: 5px;
 }
 
 #bottomnav {
     margin: auto;
-    width: 450px;
-    height: 70px
+    width: 350px;
+    height: 100px;
 }
 
 .bottommenu {
@@ -1570,10 +1576,7 @@ a.openid_large_btn:focus {
         display: none
     }
 
-    #sections {
-        top: 50%;
-        margin-top: -240px
-    }
+    
 
     #toppanel {
         z-index: 0
@@ -1605,7 +1608,7 @@ a.openid_large_btn:focus {
         border-radius: 12px;
         font-size: 20px;
         padding: 13px 20px;
-        margin-left: 50px;
+        margin-left: 40px;
       }
       
       .gbtn2:hover {
@@ -1618,10 +1621,10 @@ a.openid_large_btn:focus {
         background-color: white;
         color: black;
         border: 5px solid #f44336;
-        border-radius: 50%;
+        border-radius: 100%;
         padding: 10px 20px;
         font-size: 24px;
-        margin: 10px;
+        margin-left: 50px;
       }
       
       .gbtn3:hover {
@@ -1633,10 +1636,10 @@ a.openid_large_btn:focus {
         background-color: white;
         color: black;
         border: 5px solid #008CBA;
-        border-radius: 50%;
+        border-radius: 100%;
         padding: 10px 20px;
         font-size: 24px;
-        margin: 5px;
+        /* margin: 10px; */
       }
       
       .gbtn4:hover {
